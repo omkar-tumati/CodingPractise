@@ -2,25 +2,6 @@
 
 Given a string s, find the length of the longest substring without duplicate characters."""
 
-# class Solution(object):
-#     def lengthOfLongestSubstring(self, s):
-#         set = []
-#         max_len = 0
-#         n=0
-#         for i in range(len(s)):
-#             set.clear()
-#             for j in range(n,i+1):
-#                 val = ord(s[j])
-#                 if val in set:
-#                     n = j
-#                     set.clear()
-#                     break
-#                 else:
-#                     set.append(val)
-#             max_len = max(max_len, len(set))
-#         return(max_len)
-  
-
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         set = []
@@ -39,5 +20,5 @@ class Solution(object):
 # Example usage:
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.lengthOfLongestSubstring("aab"))  # Output: 3
+    print(sol.lengthOfLongestSubstring("aab"))
             
